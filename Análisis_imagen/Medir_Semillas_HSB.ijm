@@ -44,13 +44,13 @@ function processFile(input, output, file) {
 		run("Set Scale...", "distance=189.6002 known=1 pixel=1 unit=mm global");
 		
 		run("Set Measurements...", "area mean standard min display redirect=[H" + file + "] decimal=3");
-		run("Analyze Particles...", "display exclude");
+		run("Analyze Particles...", "Size=2000-Infinity", "display exclude");
 
 		run("Set Measurements...", "area mean standard min display redirect=[S" + file + "] decimal=3");
-		run("Analyze Particles...", "display exclude");
+		run("Analyze Particles...", "Size=2000-Infinity", "display exclude");
 
 		run("Set Measurements...", "area mean standard min display redirect=[B" + file + "] decimal=3");
-		run("Analyze Particles...", "display exclude");
+		run("Analyze Particles...", "Size=2000-Infinity", "display exclude");
 		
 		run("Close All");
 }
