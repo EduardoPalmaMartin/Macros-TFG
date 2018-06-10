@@ -45,7 +45,7 @@ function processFile(input, output, file) {
 
 		run("Set Scale...", "distance=189.6002 known=1 pixel=1 unit=mm global");
 		run("Set Measurements...", "area perimeter shape feret's display redirect=None decimal=3");
-		run("Analyze Particles...", "display exclude");
+		run("Analyze Particles...", "Size=2000-Infinity", "display exclude");
 
 		saveAs("Jpeg", output2 + file);
 
