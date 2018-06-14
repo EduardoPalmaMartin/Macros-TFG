@@ -9,4 +9,6 @@ Macros para el análisis de datos morfométricos y de color de un set de hojas d
 En la línea de comando:
   run("Set Scale...", "distance=189.6002 known=1 pixel=1 unit=mm global");
  se debe sustituir el valor de "distance" por la escala de cada set de hojas (en mm)
+
+### Nota
 Los macros han sido ejecutados en Windows 7 Ultimate (64-bit)
